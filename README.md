@@ -4,6 +4,8 @@
 This Docker image will import an OSM PBF file using [imposm3](https://github.com/omniscale/imposm3) and
 a [custom mapping configuration](https://imposm.org/docs/imposm3/latest/mapping.html).
 
+This version will import into a database with EPSG:4326 projection.
+
 ## Usage
 
 ### Download PBF File
@@ -31,4 +33,3 @@ docker run --rm \
     -e POSTGRES_PORT="5432" \
     openmaptiles/import-osm
 ```
-

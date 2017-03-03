@@ -20,6 +20,7 @@ function import_pbf() {
     imposm3 import \
         -connection "$PG_CONNECT" \
         -mapping "$MAPPING_YAML" \
+        -srid 4326 \
         -overwritecache \
         -diffdir "$DIFF_DIR" \
         -cachedir "$IMPOSM_CACHE_DIR" \
